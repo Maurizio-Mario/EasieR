@@ -1,14 +1,14 @@
-Package: Easier
+Package: EasieR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Package for Debora's Rumsey's Statistics Workbook.
 Version: 0.1
 Date: 2016-04-12
 Depends: lattice
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Maurizio Mario Murino
+Maintainer: <maurizio.murino@hotmail.com>
+Description: Since the Workbook comes for paper and pencil, EasieR incorporats function to deal with the most common tasks across the book.
+License: GLP - 3
 LazyData: TRUE
 NeedsCompilation: no
-Packaged: 2016-04-12 15:29:49 UTC; MaurizioLocale
-Built: R 3.2.4; ; 2016-04-12 15:29:51 UTC; windows
+Packaged: 2016-04-12 17:06:40 UTC; MaurizioLocale
+Built: R 3.2.4; ; 2016-04-12 17:06:42 UTC; windows

@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Building a function to translate a score from distribution in a z-score graph.\n#'\n#' This function is thought for the chapter 6 on Standard Normal distributions. It allows to rapidly draw a plot with Lattice representing a Standard normal distribution translating the inputs for a generic normal distribution. Furthermore, it allows to stress out cumulative probability distributions if necessary.\n#'\n#' @param my_x is the score of interest from a given distribution.\n#' @param myMean is the mean of the given distribution.\n#' @param mySd is the standard deviation of the given distribution.\n#' @param p default zero, it is called for plotting and calculating \"less\" P(x<a), \"more\" P(x>a), \"between\" P(a<x<b)\n#' @param y second score for a \"probability between x and y\" problem\n#' @param main it gives give a desired title to the plot\n#' @return a plot stressing the corresponding z-score of the input data.\n#' @author Maurizio Mario Murino\n#' @details the package is actually under development.\n#' @seealso \\code{Lattice, xyplot}\n#' @export\n#' @importFrom lattice xyplot\n#'\n\nz_plot <- function(my_x, myMean, mySd, p = 0, y, title = \"\"){\n    dt1 <- seq(-4, 4, length = 1000)\n    dt2 <- dnorm(dt1, 0, 1)\n    z <- (my_x - myMean)/mySd\n    if(p == 3){\n        z2 <- (y - myMean)/mySd\n    }\n    xyplot(dt2 ~ dt1,\n           type = \"l\",\n           main = title,\n           panel = function(x, y, ...){\n               panel.xyplot(x, y, ...)\n               p2 <- round(pnorm(my_x, myMean, mySd), 3)\n               p3 <- round(pnorm(y, myMean, mySd), 3)\n               if(p == 1){\n                   xx <- c(-4, x[x>=-4 & x<=z], z)\n                   yy <- c(0, y[x>=-4 & x<=z], 0)\n                   panel.polygon(xx,yy, ..., col='red')\n                   panel.text(lab = paste(\"P(X<a) = \", p2, sep = \"\"), x = 3, y = 0.35)\n\n               }else if(p == 2){\n                   xx <- c(z, x[x>=z & x<=4], 4)\n                   yy <- c(0, y[x>=z & x<=4], 0)\n                   panel.polygon(xx,yy, ..., col='red')\n                   panel.text(lab = paste(\"P(X>a) = \",(1 - p2), sep = \"\"), x = 3, y = 0.35)\n               }else if(p == 3){\n                   panel.abline(v = z2, lty = 2)\n                   if(z < z2){\n                       xx <- c(z, x[x>=z & x<=z2], z2)\n                       yy <- c(0, y[x>=z & x<=z2], 0)\n                       panel.polygon(xx,yy, ..., col='red')\n                       panel.text(lab = paste(\"P(a<X<b) = \",(p3 - p2), sep = \"\"), x = 3, y = 0.35)\n\n                   }else{\n                       xx <- c(z2, x[x>=z2 & x<=z], z)\n                       yy <- c(0, y[x>=z2 & x<=z], 0)\n                       panel.polygon(xx,yy, ..., col='red')\n                       panel.text(lab = paste(\"P(a<X<b) = \",(p2 - p3), sep = \"\"), x = 3, y = 0.35)\n                   }\n               }\n               panel.abline(v = c(z, 0), lty = c(2, 3))\n               panel.text(lab = c(paste(\"z = \", z, sep = \"\"), paste(\"z2 = \", z2, sep = \"\")), y = c(.41, .39), x = c(z, z2), cex = 1)\n\n           }\n    )\n}\n\n",
+    "created" : 1460477383342.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1289731275",
+    "id" : "9E5AD3FC",
+    "lastKnownWriteTime" : 1460480477,
+    "path" : "C:/Users/MaurizioLocale/OneDrive/EasieR/EasieR/Easier/R/EasieR.R",
+    "project_path" : "R/EasieR.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

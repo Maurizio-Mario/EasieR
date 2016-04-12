@@ -1,13 +1,13 @@
 {
-    "contents" : "Package: Easier\nType: Package\nTitle: What the Package Does (Title Case)\nVersion: 0.1\nDate: 2016-04-12\nDepends: lattice\nAuthor: Who wrote it\nMaintainer: Who to complain to <yourfault@somewhere.net>\nDescription: More about what it does (maybe more than one line)\nLicense: What license is it under?\nLazyData: TRUE\n",
+    "contents" : "Package: EasieR\nType: Package\nTitle: Package for Debora's Rumsey's Statistics Workbook.\nVersion: 0.1\nDate: 2016-04-12\nDepends: lattice\nAuthor: Maurizio Mario Murino\nMaintainer: <maurizio.murino@hotmail.com>\nDescription: Since the Workbook comes for paper and pencil, EasieR incorporats function to deal with the most common tasks across the book.\nLicense: GLP - 3\nLazyData: TRUE\n",
     "created" : 1460473939678.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4088224263",
+    "hash" : "4079704739",
     "id" : "72FC4E32",
-    "lastKnownWriteTime" : 1460474911,
-    "path" : "C:/Users/MaurizioLocale/Desktop/EasieR/Easier/DESCRIPTION",
+    "lastKnownWriteTime" : 1460480757,
+    "path" : "C:/Users/MaurizioLocale/OneDrive/EasieR/EasieR/Easier/DESCRIPTION",
     "project_path" : "DESCRIPTION",
     "properties" : {
     },

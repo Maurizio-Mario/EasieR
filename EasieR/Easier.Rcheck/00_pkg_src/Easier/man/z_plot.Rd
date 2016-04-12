@@ -4,18 +4,20 @@
 \alias{z_plot}
 \title{Building a function to translate a score from distribution in a z-score graph.}
 \usage{
-z_plot(x, myMean, mySd, p = 0, title = "", y)
+z_plot(my_x, myMean, mySd, p = 0, y, title = "")
 }
 \arguments{
-\item{x}{is the score of interest from a given distribution.}
+\item{my_x}{is the score of interest from a given distribution.}
 
 \item{myMean}{is the mean of the given distribution.}
 
 \item{mySd}{is the standard deviation of the given distribution.}
 
-\item{p}{default zero, it is called for plotting and calculating}
+\item{p}{default zero, it is called for plotting and calculating "less" P(x<a), "more" P(x>a), "between" P(a<x<b)}
 
-\item{main}{it should give a desired title to the plot}
+\item{y}{second score for a "probability between x and y" problem}
+
+\item{main}{it gives give a desired title to the plot}
 }
 \value{
 a plot stressing the corresponding z-score of the input data.
@@ -24,7 +26,7 @@ a plot stressing the corresponding z-score of the input data.
 This function is thought for the chapter 6 on Standard Normal distributions. It allows to rapidly draw a plot with Lattice representing a Standard normal distribution translating the inputs for a generic normal distribution. Furthermore, it allows to stress out cumulative probability distributions if necessary.
 }
 \details{
-the function is actually under development.
+the package is actually under development.
 }
 \author{
 Maurizio Mario Murino

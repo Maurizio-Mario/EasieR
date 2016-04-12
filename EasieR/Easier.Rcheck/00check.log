@@ -1,10 +1,10 @@
-* using log directory 'C:/Users/MaurizioLocale/Desktop/EasieR/Easier.Rcheck'
+* using log directory 'C:/Users/MaurizioLocale/OneDrive/EasieR/EasieR/EasieR.Rcheck'
 * using R version 3.2.4 (2016-03-10)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
-* checking for file 'Easier/DESCRIPTION' ... OK
+* checking for file 'EasieR/DESCRIPTION' ... OK
 * checking extension type ... Package
-* this is package 'Easier' version '0.1'
+* this is package 'EasieR' version '0.1'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -12,13 +12,13 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'Easier' can be installed ... OK
+* checking whether package 'EasieR' can be installed ... OK
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... NOTE
-Malformed Description field: should contain one or more complete sentences.
+Malformed Title field: should not end in a period.
 Non-standard license specification:
-  What license is it under?
+  GLP - 3
 Standardizable: FALSE
 * checking top-level files ... OK
 * checking for left-over files ... OK
@@ -42,9 +42,9 @@ z_plot : <anonymous>: no visible global function definition for
 z_plot : <anonymous>: no visible global function definition for
   'panel.polygon'
 z_plot : <anonymous>: no visible global function definition for
-  'panel.abline'
-z_plot : <anonymous>: no visible global function definition for
   'panel.text'
+z_plot : <anonymous>: no visible global function definition for
+  'panel.abline'
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd cross-references ... OK
@@ -52,7 +52,7 @@ z_plot : <anonymous>: no visible global function definition for
 * checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... WARNING
 Undocumented arguments in documentation object 'z_plot'
-  'title' 'y'
+  'title'
 Documented arguments not in \usage in documentation object 'z_plot':
   'main'
 

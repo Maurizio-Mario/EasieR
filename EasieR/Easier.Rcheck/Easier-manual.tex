@@ -8,20 +8,20 @@
 \begin{document}
 \chapter*{}
 \begin{center}
-{\textbf{\huge Package `Easier'}}
+{\textbf{\huge Package `EasieR'}}
 \par\bigskip{\large \today}
 \end{center}
 \begin{description}
 \raggedright{}
 \item[Type]\AsIs{Package}
-\item[Title]\AsIs{What the Package Does (Title Case)}
+\item[Title]\AsIs{Package for Debora's Rumsey's Statistics Workbook.}
 \item[Version]\AsIs{0.1}
 \item[Date]\AsIs{2016-04-12}
 \item[Depends]\AsIs{lattice}
-\item[Author]\AsIs{Who wrote it}
-\item[Maintainer]\AsIs{Who to complain to }\email{yourfault@somewhere.net}\AsIs{}
-\item[Description]\AsIs{More about what it does (maybe more than one line)}
-\item[License]\AsIs{What license is it under?}
+\item[Author]\AsIs{Maurizio Mario Murino}
+\item[Maintainer]\AsIs{}\email{maurizio.murino@hotmail.com}\AsIs{}
+\item[Description]\AsIs{Since the Workbook comes for paper and pencil, EasieR incorporats function to deal with the most common tasks across the book.}
+\item[License]\AsIs{GLP - 3}
 \item[LazyData]\AsIs{TRUE}
 \item[NeedsCompilation]\AsIs{no}
 \end{description}
@@ -35,26 +35,28 @@ This function is thought for the chapter 6 on Standard Normal distributions. It 
 %
 \begin{Usage}
 \begin{verbatim}
-z_plot(x, myMean, mySd, p = 0, title = "", y)
+z_plot(my_x, myMean, mySd, p = 0, y, title = "")
 \end{verbatim}
 \end{Usage}
 %
 \begin{Arguments}
 \begin{ldescription}
-\item[\code{x}] is the score of interest from a given distribution.
+\item[\code{my\_x}] is the score of interest from a given distribution.
 
 \item[\code{myMean}] is the mean of the given distribution.
 
 \item[\code{mySd}] is the standard deviation of the given distribution.
 
-\item[\code{p}] default zero, it is called for plotting and calculating
+\item[\code{p}] default zero, it is called for plotting and calculating "less" P(x<a), "more" P(x>a), "between" P(a<x<b)
 
-\item[\code{main}] it should give a desired title to the plot
+\item[\code{y}] second score for a "probability between x and y" problem
+
+\item[\code{main}] it gives give a desired title to the plot
 \end{ldescription}
 \end{Arguments}
 %
 \begin{Details}\relax
-the function is actually under development.
+the package is actually under development.
 \end{Details}
 %
 \begin{Value}
