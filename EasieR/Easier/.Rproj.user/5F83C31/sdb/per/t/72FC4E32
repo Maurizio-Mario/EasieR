@@ -1,0 +1,17 @@
+{
+    "contents" : "Package: Easier\nType: Package\nTitle: What the Package Does (Title Case)\nVersion: 0.1\nDate: 2016-04-12\nDepends: lattice\nAuthor: Who wrote it\nMaintainer: Who to complain to <yourfault@somewhere.net>\nDescription: More about what it does (maybe more than one line)\nLicense: What license is it under?\nLazyData: TRUE\n",
+    "created" : 1460473939678.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4088224263",
+    "id" : "72FC4E32",
+    "lastKnownWriteTime" : 1460474911,
+    "path" : "C:/Users/MaurizioLocale/Desktop/EasieR/Easier/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "dcf"
+}

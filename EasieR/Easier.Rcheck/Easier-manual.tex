@@ -1,0 +1,72 @@
+\nonstopmode{}
+\documentclass[a4paper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\usepackage[utf8,latin1]{inputenc}
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `Easier'}}
+\par\bigskip{\large \today}
+\end{center}
+\begin{description}
+\raggedright{}
+\item[Type]\AsIs{Package}
+\item[Title]\AsIs{What the Package Does (Title Case)}
+\item[Version]\AsIs{0.1}
+\item[Date]\AsIs{2016-04-12}
+\item[Depends]\AsIs{lattice}
+\item[Author]\AsIs{Who wrote it}
+\item[Maintainer]\AsIs{Who to complain to }\email{yourfault@somewhere.net}\AsIs{}
+\item[Description]\AsIs{More about what it does (maybe more than one line)}
+\item[License]\AsIs{What license is it under?}
+\item[LazyData]\AsIs{TRUE}
+\item[NeedsCompilation]\AsIs{no}
+\end{description}
+\Rdcontents{\R{} topics documented:}
+\inputencoding{utf8}
+\HeaderA{z\_plot}{Building a function to translate a score from distribution in a z-score graph.}{z.Rul.plot}
+%
+\begin{Description}\relax
+This function is thought for the chapter 6 on Standard Normal distributions. It allows to rapidly draw a plot with Lattice representing a Standard normal distribution translating the inputs for a generic normal distribution. Furthermore, it allows to stress out cumulative probability distributions if necessary.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+z_plot(x, myMean, mySd, p = 0, title = "", y)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{x}] is the score of interest from a given distribution.
+
+\item[\code{myMean}] is the mean of the given distribution.
+
+\item[\code{mySd}] is the standard deviation of the given distribution.
+
+\item[\code{p}] default zero, it is called for plotting and calculating
+
+\item[\code{main}] it should give a desired title to the plot
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Details}\relax
+the function is actually under development.
+\end{Details}
+%
+\begin{Value}
+a plot stressing the corresponding z-score of the input data.
+\end{Value}
+%
+\begin{Author}\relax
+Maurizio Mario Murino
+\end{Author}
+%
+\begin{SeeAlso}\relax
+\code{Lattice, xyplot}
+\end{SeeAlso}
+\printindex{}
+\end{document}
