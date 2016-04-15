@@ -50,17 +50,7 @@ z_plot : <anonymous>: no visible global function definition for
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... OK
 * checking for code/documentation mismatches ... OK
-* checking Rd \usage sections ... WARNING
-Undocumented arguments in documentation object 'z_plot'
-  'title'
-Documented arguments not in \usage in documentation object 'z_plot':
-  'main'
-
-Functions with \usage entries need to have the appropriate \alias
-entries, and all their arguments documented.
-The \usage entries must correspond to syntactically valid R code.
-See chapter 'Writing R documentation files' in the 'Writing R
-Extensions' manual.
+* checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
 * checking examples ... NONE
@@ -70,4 +60,4 @@ This typically indicates Rd problems.
 * checking PDF version of manual without hyperrefs or index ... ERROR
 Re-running with no redirection of stdout/stderr.
 * DONE
-Status: 1 ERROR, 2 WARNINGs, 2 NOTEs
+Status: 1 ERROR, 1 WARNING, 2 NOTEs

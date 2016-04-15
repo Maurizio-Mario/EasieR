@@ -10,5 +10,5 @@ Description: Since the Workbook comes for paper and pencil, EasieR incorporats f
 License: GLP - 3
 LazyData: TRUE
 NeedsCompilation: no
-Packaged: 2016-04-12 17:06:40 UTC; MaurizioLocale
-Built: R 3.2.4; ; 2016-04-12 17:06:42 UTC; windows
+Packaged: 2016-04-15 13:22:22 UTC; MaurizioLocale
+Built: R 3.2.4; ; 2016-04-15 13:22:25 UTC; windows
