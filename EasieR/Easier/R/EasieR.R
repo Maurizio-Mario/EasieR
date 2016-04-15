@@ -47,17 +47,21 @@ z_plot <- function(my_x, myMean, mySd, p = 0, y, title = ""){
                        xx <- c(z, x[x>=z & x<=z2], z2)
                        yy <- c(0, y[x>=z & x<=z2], 0)
                        panel.polygon(xx,yy, ..., col='red')
-                       panel.text(lab = paste("P(a<X<b) = ",(p3 - p2), sep = ""), x = 3, y = 0.35)
+                       panel.text(lab = paste("P(a<X<b) = ",abs(p3 - p2), sep = ""), x = 3, y = 0.35)
 
                    }else{
                        xx <- c(z2, x[x>=z2 & x<=z], z)
                        yy <- c(0, y[x>=z2 & x<=z], 0)
                        panel.polygon(xx,yy, ..., col='red')
-                       panel.text(lab = paste("P(a<X<b) = ",(p2 - p3), sep = ""), x = 3, y = 0.35)
+                       panel.text(lab = paste("P(a<X<b) = ",abs(p2 - p3), sep = ""), x = 3, y = 0.35)
                    }
                }
                panel.abline(v = c(z, 0), lty = c(2, 3))
-               panel.text(lab = c(paste("z = ", z, sep = ""), paste("z2 = ", z2, sep = "")), y = c(.41, .39), x = c(z, z2), cex = 1)
+               if(p == 3){
+                   panel.text(lab = c(paste("z = ", z, sep = ""), paste("z2 = ", z2, sep = "")), y = c(.41, .39), x = c(z, z2), cex = 1)
+               }else{
+               panel.text(lab = paste("z = ", z, sep = ""), y = .41, x = z2, cex = 1)
+               }
 
            }
     )

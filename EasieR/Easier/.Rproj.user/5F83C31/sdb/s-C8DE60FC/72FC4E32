@@ -1,0 +1,17 @@
+{
+    "contents" : "Package: EasieR\nType: Package\nTitle: Package for Debora's Rumsey's Statistics Workbook.\nVersion: 0.1\nDate: 2016-04-12\nDepends: lattice\nAuthor: Maurizio Mario Murino\nMaintainer: <maurizio.murino@hotmail.com>\nDescription: Since the Workbook comes for paper and pencil, EasieR incorporats function to deal with the most common tasks across the book.\nLicense: GLP - 3\nLazyData: TRUE\n",
+    "created" : 1460473939678.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4079704739",
+    "id" : "72FC4E32",
+    "lastKnownWriteTime" : 1460480757,
+    "path" : "C:/Users/MaurizioLocale/OneDrive/EasieR/EasieR/Easier/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "dcf"
+}
